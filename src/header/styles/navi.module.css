@@ -1,0 +1,64 @@
+.header{
+    position: relative;
+
+}
+.nav_wrap{
+    width: 800px;
+    position: absolute;
+    right:180px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+
+}
+.dropBox{
+    font-size: 18px;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(146, 130, 130);
+}
+.navItem, .dropItem{
+    text-decoration: none;
+    color: rgb(146, 130, 130);
+}
+.navItem:visited{
+    background-color: black;
+}
+.login,.signup{
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(146, 130, 130);
+    font-size: 16px;
+}
+.login:hover,.signup:hover{
+    color:rgb(241, 210, 123);
+}
+.signup{
+    margin-left: 20px;
+}
+.dropNav:hover{
+    color:rgb(59, 55, 55);
+}
+.dropItem:hover,.navItem:hover {
+    color:rgb(241, 210, 123);
+}
+.drop_button{
+    background-color: rgb(59, 55, 55);
+}
+.drop_button:hover{
+    background-color: rgb(215, 213, 213);  
+}
+.drop_menu{
+    background-color:rgb(42, 42, 50) ;
+    opacity: 0.8;
+}
+
+
+.forUser{
+    position: absolute;
+    top: 5px;
+    right: 60px;
+    display: flex;
+    
+}
