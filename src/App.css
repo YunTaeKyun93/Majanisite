@@ -4,21 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Vitro_core';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 
-@font-face {
-  font-family: 'ParkYongJun';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/ParkYongJun.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+
 /* 민지추천 */
 @font-face {
   font-family: 'ROKAFSlabSerifBold';
@@ -46,3 +35,9 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'LeferiPoint-SpecialItalicA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

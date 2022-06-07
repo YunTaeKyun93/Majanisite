@@ -7,15 +7,15 @@ import classNames from "classnames/bind";
 import { BiCaretUp,BiCaretDown } from "react-icons/bi";
 
 const ss = classNames.bind(styles);
-const FiatDetail = () => {
+const ScorzaDetail = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(0);
   const [price, setPrice] = useState(0);
-  const prodcutPrice = 42000;
+  const prodcutPrice = 14000;
   const number = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   const getProductDetail = async () => {
-    let url1 = `https://my-json-server.typicode.com/YunTaeKyun93/Majanisite/fiat/${id}`;
+    let url1 = `https://my-json-server.typicode.com/YunTaeKyun93/Majanisite/scorza/${id}`;
     let res = await fetch(url1);
     let data = await res.json();
     console.log(data);
@@ -76,4 +76,4 @@ const FiatDetail = () => {
   );
 };
 
-export default FiatDetail;
+export default ScorzaDetail;

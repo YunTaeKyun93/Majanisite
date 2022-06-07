@@ -12,7 +12,10 @@ import FiatDetail from './pages/FiatDetail';
 import Footer from './pages/Footer';
 import Tortellini from './pages/Tortellini';
 import Scorza from './pages/Scorza';
+import ScorzaDetail from './pages/ScorzaDetail';
 import Recipe from './pages/Recipe';
+import TortelliniDetail from './pages/TortelliniDetail';
+
 // json-server --watch db.json --port 5000
 
 function App() {
@@ -30,9 +33,11 @@ console.log(authenticate)
         <Route path='/manufacture' element={<Manufacture/>} />
         <Route path='/history' element={<History/>} />
         <Route path='/fiat' element={<Fiat/>}/>
-        <Route path='/fiatDetail/:id' element={<FiatDetail/>}/>
+        <Route path='/fiat/:id' element={<FiatDetail/>}/>
         <Route path='/tortellini' element={<Tortellini/>}/>
+        <Route path='/tortellini/:id' element={<TortelliniDetail/>}/>
         <Route path='/scorza' element={<Scorza/>}/>
+        <Route path='/scorza/:id' element={<ScorzaDetail/>}/>
         <Route path='/recipe' element={<Recipe/>}/>
       </Routes>
       <Footer/>
