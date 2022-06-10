@@ -24,7 +24,7 @@ const FiatDetail = () => {
     let data = await res.json();
     console.log(data);
     setProduct(data);
-    console.log(product.id);
+   
   };
 
   const minus = () => {

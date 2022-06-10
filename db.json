@@ -6,21 +6,21 @@
             "engTitle" : "Fiat Classic",
             "subTitle" : "세계 최초이자 유일한 4겹의 초콜릿",
             "price" : "₩42,000",
-            "url" : "images/FiatClassic.png"
+            "url" : "/images/FiatClassic.png"
         },  {
             "id" : 2,
             "title" : "피아트 누아르",  
             "engTitle" : "Fiat Noir",
             "subTitle" : "카카오 함량이 높아 보다 다크한 풍미를 즐기기에 좋습니다",
             "price" : "₩42,000",
-            "url" : "images/fiatNoir.png"
+            "url" : "/images/fiatNoir.png"
         },  {
             "id" : 3,
             "title" : "피아트 너트",
             "engTitle" : "Fiat Nut",
             "subTitle" : "피아트 오리지널 4겹의 초콜릿과 풍부한 견과류의 환상적인 조화",
             "price" : "₩42,000",
-            "url" : "images/fiatNuts.png"
+            "url" : "/images/fiatNuts.png"
         }
     ],
     "scorza":[
@@ -30,14 +30,14 @@
             "engTitle" : "Scorza Chocolate",
             "subTitle" : "가장 오래된 고체형 초콜릿",
             "price" : "₩14,000",
-            "url" : "images/scorzaProduct1.jpg"
+            "url" : "/images/scorzaProduct1.jpg"
         },  {
             "id" : 2,
             "title" : "스코르자 다크초콜릿",  
             "engTitle" : "Scorza Dark Chocolate",
             "subTitle" : "기존 스코르자 초콜릿의 카카오90%함유된 다크 초콜릿",
             "price" : "₩14,000",
-            "url" : "images/scorzaProduct2.jpg"
+            "url" : "/images/scorzaProduct2.jpg"
         }
     ],
     "tortellini":[
@@ -47,21 +47,21 @@
             "subTitle" : "고품질의 카카오버터로 빚은 화이트 초콜릿",
             "engTitle" : "White Tortellini",
             "price" : "₩45,000",
-            "url" : "images/tortelliniWhite .jpg"
+            "url" : "/images/tortelliniWhite .jpg"
         },  {
             "id" : 2,
             "title" : "밀크 토르텔리니",
             "subTitle" : "달콤하면서 깔끔한 끝맛의 밀크 초콜릿",
             "engTitle" : "Milk Tortellini",
             "price" : "₩45,000",
-            "url" : "images/tortelliniMilk.png"
+            "url" : "/images/tortelliniMilk.png"
         },  {
             "id" : 3,
             "title" : "다크 토르텔리니",
             "subTitle" : "진하고 쌉사름한 다크 초콜릿 특유의 풍미를 느낄 수 있는 다크 초콜릿",
             "engTitle" : "Dark Tortellini",
             "price" : "₩45,000",
-            "url" : "images/tortelliniDark.png"
+            "url" : "/images/tortelliniDark.png"
         }
     ]
 }
