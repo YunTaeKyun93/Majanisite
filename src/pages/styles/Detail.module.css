@@ -7,7 +7,12 @@
 
 .detailImgWrap {
   width: 30vw;
-  background-color: red;
+  height: 500px;
+  border: 3px soild black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .detailContentWrap {
@@ -26,16 +31,16 @@
 
   padding-top: 10px;
 }
-.productPrice{
-    color: rgb(38, 83, 219);
+.productPrice {
+  color: rgb(38, 83, 219);
 }
-.productTitle2{
-    margin-top: 5px;
-    margin-right: 20px;
+.productTitle2 {
+  margin-top: 5px;
+  margin-right: 20px;
 }
-.productSum{
-    margin-top: 5px;
-    margin-left: 200px;
+.productSum {
+  margin-top: 5px;
+  margin-left: 200px;
 }
 .quantityProduct {
   width: 30px;

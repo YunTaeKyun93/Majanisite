@@ -7,7 +7,7 @@ import classNames from "classnames/bind";
 const ss = classNames.bind(styles);
 
 
-const FiatProductCard = ({item,index}) => {
+const FiatProductCard = ({item}) => {
   const navigate = useNavigate();
   const showDetail = () => {
     navigate(`/fiat/${item.id}`);
