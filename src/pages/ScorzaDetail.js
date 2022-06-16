@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styles from "./styles/Detail.module.css";
 import classNames from "classnames/bind";
-import { BiCaretUp,BiCaretDown } from "react-icons/bi";
+import { BiCaretUp, BiCaretDown } from "react-icons/bi";
 
 const ss = classNames.bind(styles);
 const ScorzaDetail = () => {
@@ -44,7 +44,7 @@ const ScorzaDetail = () => {
   return (
     <div className={ss("detailWrap")}>
       <div className={ss("detailImgWrap")}>
-        <img src={product?.url} />
+        <img src={product?.url} width={500}/>
       </div>
       <div className={ss("detailContentWrap")}>
         <h5 className={ss("productTitle")}>제품명 : {product?.title}</h5>
@@ -58,11 +58,11 @@ const ScorzaDetail = () => {
         <div className={ss("btnAndPrice")}>
           <p className={ss("productTitle2")}>{product?.title}</p>
           <button onClick={minus} className={ss("productMinus")}>
-          <BiCaretDown/>
+            <BiCaretDown />
           </button>
           <div className={ss("quantityProduct")}> {quantity}</div>
           <button onClick={plus} className={ss("productPlus")}>
-           <BiCaretUp/>
+            <BiCaretUp />
           </button>
           <p className={ss("productSum")}>{number} 원</p>
         </div>
@@ -70,6 +70,7 @@ const ScorzaDetail = () => {
         <div className={ss("hr")}></div>
         <div className={ss("TotalPrice")}>
           Total Price(수량): {number}원({quantity} 개)
+          <button>Buy Now</button>
         </div>
       </div>
     </div>

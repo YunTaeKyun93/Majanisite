@@ -22,7 +22,6 @@ const MajaniTop3 = () => {
 
   const showComponent = (e) => {
     const { name } = e.target;
-    console.log(name);
     setContent(name);
   };
   const removeComponent = () => {

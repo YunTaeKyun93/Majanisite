@@ -13,14 +13,16 @@ import History8 from './historyImg/2017.png';
 import { Fade, Bounce } from 'react-reveal';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
+import { useMediaQuery } from 'react-responsive';
 const ss = classNames.bind(styles)
 
 
 const History = () => {
+
   return (
-    <div>
+    
       <div className={ss('historyWrap')}>
-        <img src={HistoryBack} alt="HistoryBack" />
+        <img src={HistoryBack} alt="HistoryBack" className={ss('historyBackImg')} />
         <Link to="/" className={ss('logo')}>
           <img src={Logo} alt="Logo" width="250px" />
         </Link>
@@ -32,7 +34,6 @@ const History = () => {
         <div className={ss('historyContent')}>
           <div className={ss('history1796')}>
             <Bounce left>
-              
               <img src={History1} alt="1796" />
             </Bounce>
             <Fade right>
@@ -180,14 +181,10 @@ const History = () => {
             <img src={History8} alt="2017" />
             </Fade>
           </div>
-      
-        
-         
-          
-
         </div>
       </div>
-    </div>
+
+   
   )
 }
 

@@ -44,6 +44,7 @@ const buttonValueReset =()=>{
                 onDoubleClick={buttonValueReset}
                 name={data.name}
                 key={data.id}
+                className={ss("buttonContent")}
               >
                 {data.text}
               </Button>
@@ -51,7 +52,7 @@ const buttonValueReset =()=>{
           );
         })}
       </div>
-      {content && <div>{selectComponent[content]}</div>}
+      {content && <div className={ss("qustionContent")}>{selectComponent[content]}</div>}
     </div>
   );
 };
@@ -59,7 +60,7 @@ const buttonValueReset =()=>{
 export default Question;
 
 const Button = styled.button`
-  width: 1900px;
+  width: 100vw;
   padding: 1rem 2rem;
   color: #fff;
   background: #0f2027;

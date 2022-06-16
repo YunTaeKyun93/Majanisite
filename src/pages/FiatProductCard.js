@@ -14,10 +14,10 @@ const FiatProductCard = ({item}) => {
   }
   return (
     <div  className={ss("productCard")} key={item?.id} onClick={showDetail} >
-      <img src={item?.url} width="250px" className={ss("productCardImg")} />
+      <img src={item?.url} className={ss("productCardImg")} />
       <h5>{item?.title}</h5>
-      <div>{item?.engTitle}</div>
-      <div>{item?.price}</div>
+      <p>({item?.engTitle})</p>
+      <p>{item?.price}</p>
     </div>
   );
 };

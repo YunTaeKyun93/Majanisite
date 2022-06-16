@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import styles from "./styles/Tortellini.module.css";
 import BackImg from "./tortelliniImg/tortelliniBack.png";
 import TortelliniProductCard from "./TortelliniProductCard";
@@ -15,6 +14,8 @@ import TortelliniDetail from "./TortelliniDetail";
 const ss = classNames.bind(styles);
 const Tortellini = () => {
   const [productList, setProductList] = useState([]);
+
+
   const getProduct = async () => {
     let url = `https://my-json-server.typicode.com/YunTaeKyun93/Majanisite/tortellini`;
     let res = await fetch(url);
@@ -28,12 +29,16 @@ const Tortellini = () => {
   return (
     <div>
       <div className={ss("productWrap")}>
-        <img src={BackImg} alt="backgroundImg" />
+      <img
+          src={BackImg}
+          alt="backgroundImg"
+          className={ss("backgroundImg")}
+        />
         <Link to="/" className={ss("logo")}>
-          <img src={Logo} alt="Logo" width="250px" />
+          <img src={Logo} alt="Logo"width={"30%"} />
         </Link>
         <div className={ss("logoWrap")}>
-          <img src={TortelliniLogo} alt="logo" width="300px" />
+          <img src={TortelliniLogo} alt="logo" width={"40%"}/>
 
           <p className={ss("logoExp")}>
             볼로냐의 명물 토르텔리니, 초콜릿으로 재해석
@@ -44,7 +49,7 @@ const Tortellini = () => {
             <div className={ss("con1")}>
               <div className={ss("Exp1")}>
                 <h2>Tortellini(토르텔리니)</h2>
-                <h4>초콜릿으로 다시 태어난 비너스의 배꼽</h4>
+                <h3>초콜릿으로 다시 태어난 비너스의 배꼽</h3>
                 <p>견고한 초콜릿 쉘 안에 녹아 있는 부드러운 크림의 조화</p>
               </div>
               <img src={TortelliniImg1} alt="fiatCremino" width="400px" />

@@ -45,7 +45,7 @@ const TortelliniDetail = () => {
   return (
     <div className={ss("detailWrap")}>
       <div className={ss("detailImgWrap")}>
-        <img src={product?.url} />
+        <img src={product?.url}  width={500} />
       </div>
       <div className={ss("detailContentWrap")}>
         <h5 className={ss("productTitle")}>제품명 : {product?.title}</h5>
@@ -71,6 +71,7 @@ const TortelliniDetail = () => {
         <div className={ss("hr")}></div>
         <div className={ss("TotalPrice")}>
           Total Price(수량): {number}원({quantity} 개)
+          <button>Buy Now</button>
         </div>
       </div>
     </div>

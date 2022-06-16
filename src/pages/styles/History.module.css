@@ -1,105 +1,162 @@
-.historyWrap{
-    width: 100%;
-    position: relative;
+.historyWrap {
+  width: 100vw;
+  position: relative;
 }
-.logo{
-    position: absolute;
-    top: 10px;
-    right: 900px;
+.historyBackImg {
+  width: 100vw;
 }
-.historyExp{
-    position: absolute;
-    top: 400px;
-    right: 150px;
-    font-style: oblique; 
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 900px;
 }
-
-.history1796{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-.text1796{
-    margin-top: 60px;
-    margin-left: 50px;
-    font-style: italic;
-   
+.historyExp {
+  position: absolute;
+  top: 400px;
+  right: 150px;
+  font-style: oblique;
 }
 
-.history1832{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-    
+.history1796 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-.text1832{
-    margin-top: 60px;
-    margin-right: 50px;
-    font-style: italic;
-}
-.history1867{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-.text1867{
-    margin-top: 60px;
-    margin-left: 50px;
-    font-style: italic;
-}
-.history1878{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-.text1878{
-    margin-top: 60px;
-    margin-right: 50px;
-    font-style: italic;
+.text1796 {
+  margin-top: 60px;
+  margin-left: 50px;
+  font-style: italic;
 }
 
-.history1908{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+.history1832 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-.text1908{
-    margin-top: 60px;
-    margin-left: 50px;
-    font-style: italic;
+.text1832 {
+  margin-top: 60px;
+  margin-right: 50px;
+  font-style: italic;
 }
-
-.history1911{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-    
+.history1867 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-.text1911{
-    margin-top: 60px;
-    margin-right: 50px;
-    font-style: italic;
+.text1867 {
+  margin-top: 60px;
+  margin-left: 50px;
+  font-style: italic;
 }
-
-.history1950{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+.history1878 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-.text1950{
-    margin-top: 60px;
-    margin-left: 50px;
-    font-style: italic;
+.text1878 {
+  margin-top: 60px;
+  margin-right: 50px;
+  font-style: italic;
 }
 
-.history2017{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-    
+.history1908 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-.text2017{
-    margin-top: 60px;
-    margin-right: 50px;
-    font-style: italic;
+.text1908 {
+  margin-top: 60px;
+  margin-left: 50px;
+  font-style: italic;
+}
+
+.history1911 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.text1911 {
+  margin-top: 60px;
+  margin-right: 50px;
+  font-style: italic;
+}
+
+.history1950 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.text1950 {
+  margin-top: 60px;
+  margin-left: 50px;
+  font-style: italic;
+}
+
+.history2017 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.text2017 {
+  margin-top: 60px;
+  margin-right: 50px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 990px) {
+  .historyBackImg,
+  .logo,
+  .historyExp {
+    display: none;
+  }
+  .historyWrap {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .history1796,
+  .history1832,
+  .history1867,
+  .history1878,
+  .history1908,
+  .history1911,
+  .history1950,
+  .history2017 {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .history1796 img,
+  .history1832 img,
+  .history1867 img,
+  .history1878 img,
+  .history1908 img,
+  .history1911 img,
+  .history1950 img,
+  .history2017 img {
+    width: 80vw;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .text1796,
+  .text1832,
+  .text1867,
+  .text1878,
+  .text1908,
+  .text1911,
+  .text1950,
+  .text2017 {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 20px;
+ 
+  }
 }

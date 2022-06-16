@@ -28,13 +28,12 @@ const Fiat = () => {
   return (
     <div>
       <div className={ss("productWrap")}>
-        <img src={BackImg} alt="backgroundImg" />
+        <img src={BackImg} alt="backgroundImg" className={ss("backGroundImg")} />
         <Link to="/" className={ss("logo")}>
-          <img src={Logo} alt="Logo" width="250px" />
+          <img src={Logo} alt="Logo" width={"30%"} />
         </Link>
         <div className={ss("logoWrap")}>
-          <img src={FiatLogo} alt="logo" width="150px" />
-
+          <img src={FiatLogo} alt="logo" width={"20%"} />
           <p className={ss("logoExp")}>1911년에 발명된 최초의 Cremino</p>
         </div>
         <div className={ss("contentWrap")}>
@@ -45,7 +44,7 @@ const Fiat = () => {
                 <h3>숭고한 크림</h3>
                 <p>최초이자 오리지널 4겹의 크리미노피아트</p>
               </div>
-              <img src={FiatImg1} alt="fiatCremino" width="400px" />
+              <img src={FiatImg1} alt="fiatCremino"  />
             </div>
           </Fade>
           <Fade right delay={300} left>

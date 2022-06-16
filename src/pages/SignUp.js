@@ -1,4 +1,5 @@
 import React from "react";
+
 import classNames from "classnames/bind";
 import styles from "./styles/SignUp.module.css";
 import signImg from "./mainImg/banner.jpg";
@@ -9,9 +10,14 @@ import {
   FaRegCaretSquareRight,
 } from "react-icons/fa";
 import { HiOutlineLockClosed } from "react-icons/hi";
+import { useNavigate } from 'react-router-dom';
 const ss = classNames.bind(styles);
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  const toLogin =()=>{
+    navigate('/login');
+  }
   return (
     <div>
       <section className={ss("signup")}>
@@ -100,6 +106,7 @@ const SignUp = () => {
                     id="sighnup"
                     className={ss("formSubmit")}
                     value="register"
+                    onClick={toLogin}
                   />
                 </div>
               </form>

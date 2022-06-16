@@ -15,6 +15,7 @@ import Scorza from './pages/Scorza';
 import ScorzaDetail from './pages/ScorzaDetail';
 import Recipe from './pages/Recipe';
 import TortelliniDetail from './pages/TortelliniDetail';
+import AboutUs from './pages/AboutUs';
 
 // json-server --watch db.json --port 5000
 
@@ -28,6 +29,7 @@ console.log(authenticate)
       <Navi/>
       <Routes>
         <Route path='' exact={true}  element={<Home/>} />
+        <Route path='/aboutUs' exact={true}  element={<AboutUs/>} />
         <Route path='/login' element={<Login setAuthenticate={setAuthenticate} />}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/manufacture' element={<Manufacture/>} />

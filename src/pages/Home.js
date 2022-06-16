@@ -9,19 +9,20 @@ import styled from "styled-components";
 
 export default function Home() {
   return (
-    <>
+    <Wrap>
       <MainImg />
       <Zoom>
         <Ad />
       </Zoom>
       <MajaniTop3 />
-      <Margin />
       <Question />
       <ProuductSlide />
-    </>
+    </Wrap>
   );
 }
 
-const Margin = styled.div`
-  height: 200px;
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;

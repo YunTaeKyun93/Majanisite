@@ -1,16 +1,16 @@
 .header{
     position: relative;
     font-family: 'LeferiPoint-SpecialItalicA';
+    width: 100vw;
 }
 .nav_wrap{
-    width: 800px;
-    position: absolute;
-    right:180px;
+    width: 50vw;
     display: flex;
     justify-content: space-evenly;
     font-size: 18px;
 
 }
+
 .dropBox{
     font-size: 18px;
 }
@@ -34,9 +34,7 @@
 .login:hover,.signup:hover{
     color:rgb(241, 210, 123);
 }
-.signup{
-    margin-left: 20px;
-}
+
 .dropNav:hover{
     color:rgb(59, 55, 55);
 }

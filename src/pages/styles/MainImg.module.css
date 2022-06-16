@@ -5,11 +5,18 @@
 .imgWrap {
   position: relative;
   font-family: 'Happiness-Sans-Bold';
+  width: 100vw;
+
 }
-.linkWrap {
+.linkWrap1 {
   position: absolute;
-  top: 250px;
-  right: 400px;
+  top: 40%;
+  right: 15%;
+}
+.linkWrap2 {
+  position: absolute;
+  top: 40%;
+  left: 15%;
 }
 .linkWrap h1 Link {
   font-size: 80px;
@@ -24,8 +31,12 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  width: 160px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 6vw;
+  border-radius: 8px;
   --background-color: #e3e3e3;
   --border-size: 2px;
   --accent-color: #0af;
@@ -49,8 +60,7 @@
   transform: scaleX(1);
 }
 .linkBtn1 {
-  margin-top: 110px;
-  margin-right: 150px;
+
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -62,11 +72,12 @@
   color: white;
 }
 .link1 {
+
   text-decoration: none;
   color: black;
-  font-size: 30px;
-  text-align: center;
-  line-height: 25px;
+  font-size: 4vw;
+
+ 
 }
 
 .linkBtn2::before {
@@ -87,8 +98,6 @@
   transform: scaleX(1);
 }
 .linkBtn2 {
-  margin-top: 110px;
-  margin-right: 150px;
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -102,10 +111,7 @@
 .link2 {
   text-decoration: none;
   color: black;
-  font-size: 23px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 3vw;
 }
 
 .linkBtn3::before {
@@ -126,8 +132,7 @@
   transform: scaleX(1);
 }
 .linkBtn3 {
-  margin-top: 70px;
-  margin-right: 940px;
+
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -141,9 +146,7 @@
 .link3 {
   text-decoration: none;
   color: black;
-  font-size: 25px;
-  text-align: center;
-  line-height: 25px;
+  font-size: 4vw;
 }
 
 .linkBtn4::before {
@@ -164,8 +167,8 @@
   transform: scaleX(1);
 }
 .linkBtn4 {
-  margin-top: 100px;
-  margin-right: 900px;
+  
+
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -179,7 +182,5 @@
 .link4 {
   text-decoration: none;
   color: black;
-  font-size: 25px;
-  text-align: center;
-  line-height: 25px;
+  font-size: 4vw;
 }
