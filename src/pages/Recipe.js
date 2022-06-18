@@ -33,7 +33,6 @@ const Recipe = () => {
           <RecipeCard className={ss("recipeCardWrap")}>
             <img
               src={item?.url}
-              width="150px"
               name={item.name}
               onClick={showComponent}
             />

@@ -29,13 +29,19 @@ const MobileWrap = styled.div`
   display: flex;
   justify-content: center;
   height: 80vh;
+  margin-top: auto;
+`;
+const AdWrap = styled.div`
+  margin-top: 0vh;
 `;
 
 const Ad = ({ playList, index }) => {
   return (
-    <>
+    
+    <AdWrap>
       <Desktop>
         <DeskTopWrap>
+          <Zoom>
           <ReactPlayer
             className="react-player"
             url={"https://player.vimeo.com/video/500265810"} // 플레이어 url
@@ -49,10 +55,12 @@ const Ad = ({ playList, index }) => {
             poster={main} // 플레이어 초기 포스터 사진
             // 플레이어 끝났을 때 이벤트
           />
+          </Zoom>
         </DeskTopWrap>
       </Desktop>
       <Mobile>
         <MobileWrap>
+          <Zoom>
         <ReactPlayer
           className="react-player"
           url={"https://player.vimeo.com/video/500265810"} // 플레이어 url
@@ -66,9 +74,10 @@ const Ad = ({ playList, index }) => {
           poster={main} // 플레이어 초기 포스터 사진
           // 플레이어 끝났을 때 이벤트
         />
+        </Zoom>
         </MobileWrap>
       </Mobile>
-    </>
+    </AdWrap>
   );
 };
 

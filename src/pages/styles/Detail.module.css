@@ -1,55 +1,71 @@
 .detailWrap {
   width: 100vw;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-}
-
-.detailImgWrap {
-  width: 30vw;
-  height: 500px;
-  border: 3px soild black;
-
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.detailImgWrap {
+  width: 40vw;
+  height: 500px;
+  border: 3px soild black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailImgWrap img{
+  width: 40vw;
+  margin-left: 10vw;
+}
+
 .detailContentWrap {
-  margin-left: 50px;
-  width: 30vw;
+  margin-left: 10vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 50px;
+  font-size: 1vw;
+  
 }
-
+.productTitle{
+  font-size: 1.1vw ;
+  font-weight: 700;
+}
 .btnAndPrice {
   display: flex;
-  height: 50px;
-  width: 100%;
-
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 22vw;
   padding-top: 10px;
+}
+.priceWrap{
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+
 }
 .productPrice {
   color: rgb(38, 83, 219);
 }
 .productTitle2 {
   margin-top: 5px;
-  margin-right: 20px;
+  font-size: 1.2vw;
+
 }
 .productSum {
   margin-top: 5px;
-  margin-left: 200px;
+  font-size: 1.2vw;
 }
-.quantityProduct {
-  width: 30px;
-  height: 30px;
+
+.quantityProduct{
+  width: 2vw;
+  height: 1vh;
   text-align: center;
-  line-height: 30px;
-  background-color: aliceblue;
-  border: 2px solid black;
-  margin: 0 5px;
+  line-height: 1vh;
+  font-size: 1.5vw;
 }
 .productMinus,
 .productPlus {
@@ -57,8 +73,8 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(240, 226, 234);
-  width: 30px;
-  height: 30px;
+  width: 1.5vw;
+  height: 1.5vw;
   border-radius: 30%;
   font-size: 2.5rem;
   box-sizing: border-box;
@@ -66,31 +82,168 @@
 
 .hr {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: rgb(113, 111, 114);
   margin-bottom: 20px;
 }
-.TotalPrice{
+.totalPrice{
+  width: 35vw;
   display:flex;
-  width: 100%;
   justify-content:space-between;
   align-items: center;
+  font-size: 1.2vw;
+  
 }
 
-.TotalPrice button{
+.totalPrice button{
   outline: none;
   border: none;
   background: none;
-  width: 8rem;
-  height: 30px;
+  width: 8vw;
+  height: 3vh;
   background-color: #000;
   color: white;
   font-family: 'Happiness-Sans-Bold';
   border-radius: 5px; 
   transition: all 0.3s ease-in-out;
+  line-height:  3vh;
+  margin-right: 10%;
 }
 .TotalPrice button:hover{
   background-color: aliceblue;
   color: #000;
   border: 1px solid #000;
+}
+@media screen and (max-width: 991px){
+  .detailWrap {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnAndPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 30vw;
+  }
+  .productTitle2 {
+    font-size: 1.3vw;
+  }
+  .productSum {
+    font-size: 1.3vw;
+  }
+  
+  .quantityProduct{
+    width: 1.5vw;
+    height: 1.5vh;
+    text-align: center;
+    line-height: 1.5vh;
+    font-size: 1.5vw;
+    font-weight: 700;
+  }
+  .productMinus,
+  .productPlus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 226, 234);
+    width: 2vw;
+    height:2vw;
+    border-radius: 30%;
+    font-size: 2.5rem;
+    box-sizing: border-box;
+  }
+  .totalPrice{
+    width: 100%;
+    height: 8vh;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-size: 2vw;    
+  }
+  .totalPrice button{
+    outline: none;
+    border: none;
+    background: none;
+    width: 12vw;
+    height: 3vh;
+    background-color: #000;
+    color: white;
+    font-family: 'Happiness-Sans-Bold';
+    border-radius: 5px; 
+    transition: all 0.3s ease-in-out;
+    line-height:  3vh;
+    margin-right: 10%;
+    font-size: 1.2vw;
+  }
+}
+
+
+@media screen and (max-width: 640px){
+  .btnAndPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 50vw;
+    padding-top: 10px;
+  }
+
+  .productTitle2 {
+    font-size: 2vw;
+  }
+  .productSum {
+    margin-top: 5px;
+    font-size: 2vw;
+  }
+  
+  .quantityProduct{
+    width: 3vw;
+    height: 3vh;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 2vw;
+    font-weight: 700;
+  }
+  .productMinus,
+  .productPlus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 226, 234);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 30%;
+    font-size: 2.5rem;
+    box-sizing: border-box;
+  }
+  .totalPrice{
+    width: 50vw;
+    height: 8vh;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-size: 2vw;    
+  }
+  .totalPrice button{
+    outline: none;
+    border: none;
+    background: none;
+    width: 12vw;
+    height: 3vh;
+    background-color: #000;
+    color: white;
+    font-family: 'Happiness-Sans-Bold';
+    border-radius: 5px; 
+    transition: all 0.3s ease-in-out;
+    line-height:  3vh;
+    font-size: 1.2vw;
+    margin-left: 4vw;
+  }
 }

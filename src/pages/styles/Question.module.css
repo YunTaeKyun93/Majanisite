@@ -1,5 +1,7 @@
 
 .buttonWrap {
+  margin-top: 5vh;
+  
   border: 1px solid #ccc;
   font-family: 'LeferiPoint-SpecialItalicA';
   background: #0f2027; /* fallback for old browsers */
@@ -81,12 +83,15 @@
   justify-content: center;
   align-items: center;
   border: 3px solid red;
-  padding: 100px;
+  padding: 3vh 5vw;
   
+}
+.fourth_wrap img{
+  width: 80vw;
 }
 
 .btn {
-  margin: 1rem;
+  margin: 1rem 4rem;
   background-color: var(--background-color);
   color: #222;
   padding: 0.5em 1em;
@@ -121,7 +126,7 @@
 }
 .fourth_linkBtn {
   margin-top: 20px;
-  margin-right: 100px;
+
   z-index: 1;
   overflow: hidden;
   background-color: var(--accent-color);
@@ -137,11 +142,15 @@
 }
 
 .fourth_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   text-decoration: none;
   color: white;
   font-size: 20px;
-  text-align: center;
-  line-height: 25px;
+  
+  
   font-family: LeferiBaseType-BoldA;
 }
 .fourth_link:hover{

@@ -34,7 +34,7 @@ const Navi = () => {
             <img src={Logo} alt="Logo" width="130px" />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" placement="end" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className={classNames( "me-auto", ss("nav_wrap"))} >
             <Nav.Link>
@@ -77,11 +77,11 @@ const Navi = () => {
                   Tortellini
                 </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item>
+              {/* <NavDropdown.Item>
                 <Link to="/MARACAIBO" className={ss("dropItem")}>
                   Maracaibo
                 </Link>
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Nav>

@@ -4,19 +4,18 @@
 }
 .imgWrap {
   position: relative;
-  font-family: 'Happiness-Sans-Bold';
+  font-family: "Happiness-Sans-Bold";
   width: 100vw;
-
 }
 .linkWrap1 {
   position: absolute;
   top: 40%;
-  right: 15%;
+  right: 25%;
 }
 .linkWrap2 {
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 35%;
+  left: 22%;
 }
 .linkWrap h1 Link {
   font-size: 80px;
@@ -34,8 +33,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20vw;
-  height: 6vw;
   border-radius: 8px;
   --background-color: #e3e3e3;
   --border-size: 2px;
@@ -60,7 +57,8 @@
   transform: scaleX(1);
 }
 .linkBtn1 {
-
+  width: 6vw;
+  height: 3vw;
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -72,12 +70,9 @@
   color: white;
 }
 .link1 {
-
   text-decoration: none;
   color: black;
-  font-size: 4vw;
-
- 
+  font-size: 1.5vw;
 }
 
 .linkBtn2::before {
@@ -98,6 +93,8 @@
   transform: scaleX(1);
 }
 .linkBtn2 {
+  width: 9vw;
+  height: 3vw;
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -111,7 +108,7 @@
 .link2 {
   text-decoration: none;
   color: black;
-  font-size: 3vw;
+  font-size: 1.3vw;
 }
 
 .linkBtn3::before {
@@ -132,7 +129,8 @@
   transform: scaleX(1);
 }
 .linkBtn3 {
-
+  width: 6.5vw;
+  height: 3vw;
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -146,7 +144,7 @@
 .link3 {
   text-decoration: none;
   color: black;
-  font-size: 4vw;
+  font-size: 1.3vw;
 }
 
 .linkBtn4::before {
@@ -167,8 +165,8 @@
   transform: scaleX(1);
 }
 .linkBtn4 {
-  
-
+  width: 6vw;
+  height: 3vw;
   z-index: 1;
   transition: color 300ms ease-in-out;
 }
@@ -182,5 +180,110 @@
 .link4 {
   text-decoration: none;
   color: black;
-  font-size: 4vw;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 650px) {
+  .linkBtn1 {
+    width: 10vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  .link1 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkBtn2 {
+    width: 12vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  .link2 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkBtn3 {
+    width: 10vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  .link3 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkBtn4 {
+    width: 10vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  
+  .link4 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .linkBtn1 {
+    width: 15vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  .link1 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkBtn2 {
+    width: 20vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  .link2 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkBtn3 {
+    width: 15vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  .link3 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkBtn4 {
+    width: 15vw;
+    height: 3vw;
+    z-index: 1;
+    transition: color 300ms ease-in-out;
+  }
+  
+  .link4 {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+  }
+  .linkWrap1 {
+    position: absolute;
+    top: 36%;
+    right: 15%;
+  }
+  .linkWrap2 {
+    position: absolute;
+    top: 36%;
+    left: 15%;
+  }
 }

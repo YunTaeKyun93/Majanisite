@@ -50,7 +50,7 @@ const FiatDetail = () => {
   return (
     <div className={ss("detailWrap")}>
       <div className={ss("detailImgWrap")}>
-        <img src={product?.url}  width={500}/>
+        <img src={product?.url} />
       </div>
       <div className={ss("detailContentWrap")}>
         <h5 className={ss("productTitle")}>제품명 : {product?.title}</h5>
@@ -63,19 +63,20 @@ const FiatDetail = () => {
         </p>
         <div className={ss("btnAndPrice")}>
           <p className={ss("productTitle2")}>{product?.title}</p>
-          <button onClick={minus} className={ss("productMinus")}>
+          <div className={ss("priceWrap")}>
+                 <button onClick={minus} className={ss("productMinus")}>
           <BiCaretDown/>
           </button>
-          <div className={ss("quantityProduct")}> {quantity}</div>
+          <div className={ss("quantityProduct")}>{quantity}  </div>
           <button onClick={plus} className={ss("productPlus")}>
            <BiCaretUp/>
           </button>
+          </div>
           <p className={ss("productSum")}>{number} 원</p>
         </div>
 
         <div className={ss("hr")}></div>
-        <div className={ss("TotalPrice")}>
-          
+        <div className={ss("totalPrice")}>
           Total Price(수량): {number}원({quantity} 개)
           <button>Buy Now</button>
         </div>

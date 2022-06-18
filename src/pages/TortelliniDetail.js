@@ -58,18 +58,20 @@ const TortelliniDetail = () => {
         </p>
         <div className={ss("btnAndPrice")}>
           <p className={ss("productTitle2")}>{product?.title}</p>
-          <button onClick={minus} className={ss("productMinus")}>
+          <div className={ss("priceWrap")}>
+                 <button onClick={minus} className={ss("productMinus")}>
           <BiCaretDown/>
           </button>
-          <div className={ss("quantityProduct")}> {quantity}</div>
+          <div className={ss("quantityProduct")}>{quantity}  </div>
           <button onClick={plus} className={ss("productPlus")}>
            <BiCaretUp/>
           </button>
+          </div>
           <p className={ss("productSum")}>{number} 원</p>
         </div>
 
         <div className={ss("hr")}></div>
-        <div className={ss("TotalPrice")}>
+        <div className={ss("totalPrice")}>
           Total Price(수량): {number}원({quantity} 개)
           <button>Buy Now</button>
         </div>

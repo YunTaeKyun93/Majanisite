@@ -1,14 +1,13 @@
 .top3_Wrap {
   width: 100%;
-  height: 600px;
+  font-family: "LeferiPoint-SpecialItalicA";
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .top3_Header {
-  font-family: 'LeferiPoint-SpecialItalicA';
   width: 100%;
-  height:20%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,31 +17,15 @@
 }
 .top3_content {
   width: 100%;
-  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.top3_Trigger {
-  width: 100%;
-  height: 500px;
-  z-index: 10;
-}
 
-.majaniTopContent {
-  position: absolute;
-  left: 10px;
-  top: 2400px;
-  background-color: blueviolet;
-  width: 99vw;
-  height: 150px;
-  color: white;
-  font-size: 32px;
-}
 .top3_show {
   width: 33%;
-  height: 500px;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -53,61 +36,106 @@
 .top3_show:hover {
   opacity: 0.5;
 }
-.top3_show img {
-  width: 100%;
-  height: 100%;
-}
-/* .top3_show:first-child{
-  background-color: rgb(226, 173, 197);
-}
-.top3_show:nth-child(2){
-  background-color: rgb(173, 208, 224);
-}
-.top3_show:last-child{
-  background-color: rgb(227, 195, 91);
-
-} */
-
-.top3_h1 {
-  font-size: 3rem;
-  color: white;
-}
 .top3_img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-/* .top3_fiat {
-  width: 33%;
-  height: 500px;
+.top3_title {
+  color: white;
+  font-size: 2vw;
+}
+.top3_img img {
+  width: 12vw;
+  height: 60%;
+}
+.top3_show:first-child {
   background-color: rgb(226, 173, 197);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
-.top3_scorza {
-  width: 33%;
-  height: 500px;
+.top3_show:nth-child(2) {
   background-color: rgb(173, 208, 224);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
-.top3_tortellini {
-  width: 33%;
-  height: 500px;
+.top3_show:last-child {
   background-color: rgb(227, 195, 91);
+}
+.majaniTopContent {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-} */
-/* .top3_content h1{
-    font-size: 3rem;
-    color: white;
-} */
-/* .top3_content img{
- width: 230px;
- height: 230px;
-} */
+  justify-content: center;
+}
+.majaniTopContent img {
+  width: 99%;
+  cursor: pointer;
+}
+.logo1{
+  position: absolute;
+  width: 10vw;
+  top: 10%;
+  right: 48%;
+  cursor: pointer;
+}
+.logo2 {
+  position: absolute;
+  width: 20vw;
+  top: 10%;
+  right: 42%;
+  cursor: pointer;
+}
+.logo3 {
+  position: absolute;
+  width: 20vw;
+  top: 10%;
+  right: 44%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .top3_Wrap {
+    width: 100%;
+    font-family: "LeferiPoint-SpecialItalicA";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+  }
+  .top3_show {
+    width: 33%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .top3_img img {
+    width: 10vw;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .top3_Wrap {
+    width: 100%;
+    font-family: "LeferiPoint-SpecialItalicA";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  .top3_show {
+    width: 33%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .top3_img img {
+    width: 10vw;
+    height: 50%;
+  }
+}
