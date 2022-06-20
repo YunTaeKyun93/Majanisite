@@ -20,11 +20,4 @@ export const RecipeData = [
     name: "third",
     url: "recipeImg/torta_cioccolato.png",
   },
-  {
-    id: 4,
-    title: "Cremino",
-    subTitle: "크리미노",
-    name: "fourth",
-    url: "recipeImg/cremino.jpg",
-  },
 ];

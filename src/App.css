@@ -7,9 +7,6 @@
 }
 
 
-
-
-/* 민지추천 */
 @font-face {
   font-family: 'ROKAFSlabSerifBold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
@@ -40,5 +37,12 @@
   font-family: 'LeferiPoint-SpecialItalicA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HallymGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
 }
